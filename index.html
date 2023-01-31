@@ -23,7 +23,7 @@
 			body {
 				display: grid;
 				place-content: center;
-				height: 100dvh;
+				min-height: 100vh;
 				font-family: 'Outfit', sans-serif;
 				background-color: var(--light-gray);
 			}
@@ -56,7 +56,6 @@
 				padding: var(--padding);
 				border-radius: calc(var(--inner-radius) + var(--padding));
 				width: 300px;
-				height: 450px;
 				box-shadow: 2px 4px 50px rgba(0, 0, 0, 0.2);
 			}
 
@@ -73,18 +72,18 @@
 			}
 
 			.card-content h1 {
-				font-size: 20px;
 				color: var(--dark-blue);
+				font-size: calc(15 / 16 * 1rem);
 			}
 
 			.card-content p {
-				font-size: 14px;
 				color: var(--grayish-blue);
+				font-size: calc(15 / 16 * 1rem);
 			}
 		</style>
 	</head>
 	<body>
-		<article class="card-wrapper">
+		<main class="card-wrapper">
 			<img src="images/image-qr-code.png" alt="qr-code" class="qr-code" />
 			<div class="card-content">
 				<h1>Improve your front-end skills by building projects</h1>
@@ -93,6 +92,6 @@
 					to the next level
 				</p>
 			</div>
-		</article>
+		</main>
 	</body>
 </html>
